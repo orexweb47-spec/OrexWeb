@@ -1,7 +1,44 @@
 /**************************************************
 ==================== JS START HERE ================
 ***************************************************/
+/*
+ * This page runs GSAP ScrollSmoother (#smooth-wrapper/#smooth-content),
+ * which replaces native browser scrolling. Native scrollIntoView() / the
+ * browser's own instant hash-jump both desync from ScrollSmoother's
+ * virtual scroll position, so ScrollTrigger never "passes through" the
+ * sections on the way down — which is why the .fade-anim reveal
+ * animations were getting stuck at opacity:0.
+ */
 
+// If the page loads with a hash already in the URL (reload on "#services",
+// or an inbound link), stop the browser's instant native jump so it
+// doesn't fire before ScrollSmoother/ScrollTrigger exist. We replay it
+// properly once everything below has finished setting up.
+let pendingHash = null;
+if (window.location.hash) {
+  pendingHash = window.location.hash;
+  if (history.scrollRestoration) history.scrollRestoration = 'manual';
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+  window.scrollTo(0, 0);
+}
+
+function scrollToSection(target) {
+  const smoother = typeof ScrollSmoother !== 'undefined' ? ScrollSmoother.get() : null;
+  if (smoother) {
+    smoother.scrollTo(target, true, "top top");
+  } else {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    scrollToSection(target);
+  });
+});
 (function ($) {
 	"use strict";
 
@@ -16,6 +53,17 @@
 				.removeClass("is-loading")
 				.addClass("is-loaded")
 				.fadeOut(300);
+
+			// Now that ScrollSmoother + fade-anim ScrollTriggers exist,
+			// scroll to whatever hash the page was loaded with, if any.
+			if (pendingHash) {
+				const target = document.querySelector(pendingHash);
+				if (target) {
+					scrollToSection(target);
+					history.replaceState(null, '', pendingHash);
+				}
+				pendingHash = null;
+			}
 		}, 1500);
 	});
 
