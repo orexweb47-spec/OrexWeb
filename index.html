@@ -652,31 +652,38 @@
                      </div>
                      <div class="col-xl-7">
                         <div class="dg-contact-form-box">
-                           <form action="#">
+                           <form name="orexweb-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                              <input type="hidden" name="form-name" value="orexweb-contact">
+                              <p hidden>
+                                  <label> 
+                                      Don't fill this out:
+                                      <input name="bot-field">
+                                  </label>
+                              </p>
                               <div class="row gx-25">
                                  <div class="col-12">
                                     <div class="dg-contact-input-box mb-65">
                                        <label>Full Name *</label>
-                                       <input type="text" placeholder="Lanson mendela">
+                                       <input type="text" placeholder="Ali Hassan" name="full_name" required>
                                     </div>
                                  </div>
                                  <div class="col-md-6">
                                     <div class="dg-contact-input-box mb-65">
                                        <label>Company Name *</label>
-                                       <input type="text" placeholder="Ex. Tesla inc">
+                                       <input type="text" placeholder="Bis.Bakery" name="company_name" required>
                                     </div>
                                  </div>
                                  <div class="col-md-6">
                                     <div class="dg-contact-input-box mb-65">
                                        <label>Email *</label>
-                                       <input type="email" placeholder="your@example.comc">
+                                       <input type="email" placeholder="your@example.comc" name="email" required>
                                     </div>
                                  </div>
                                  <div class="col-md-9">
                                     <div class="dg-contact-input-box mb-65">
                                        <label>Service Required *</label>
                                        <div class="dg-contact-select">
-                                          <select>
+                                          <select name="service_required" required>
                                              <option>Select your service</option>
                                              <option value="Website Design and Devlopment">Website Design and Devlopment</option>
                                              <option value="Landing Page Design">Landing Page Design</option>
@@ -688,7 +695,7 @@
                                  <div class="col-12">
                                     <div class="dg-contact-textarea-box mb-70">
                                        <label>Message *</label>
-                                       <textarea placeholder="Tell us more about your idea"></textarea>
+                                       <textarea placeholder="Tell us more about your idea" name="message" required></textarea>
                                     </div>
                                  </div>
                                  <div class="col-12">
