@@ -1,1104 +1,519 @@
 <!DOCTYPE html>
-<html class="no-js" lang="eng">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="OrexWeb is a web and brand studio helping businesses build a stronger online presence through thoughtful websites, landing pages, and branding.">
-
-    <title>OrexWeb | Web Design, Development & Branding</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/orexweb-favicon.png">
-    <!-- CSS ============================================ -->
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
-    <!-- google fonts end-->
-
-    <link href="assets/css/vendor/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/plugins/animation.css" rel="stylesheet">
-    <link href="assets/css/plugins/feature.css" rel="stylesheet">
-    <link href="assets/css/plugins/magnify.min.css" rel="stylesheet">
-    <link href="assets/css/plugins/slick.css" rel="stylesheet">
-    <link href="assets/css/plugins/slick-theme.css" rel="stylesheet">
-    <link href="assets/css/plugins/lightbox.css" rel="stylesheet">
-    <link href="assets/css/plugins/odometer.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+<meta charset="UTF-8">
+ <meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="OrexWeb is a web and brand studio helping businesses build a stronger online presence through thoughtful websites, landing pages, and branding.">
+<title>OrexWeb | Web Design, Development & Branding</title>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/orexweb-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body class="overflow-x-visible active-light-mode">
-    <main class="page-wrapper" style="background-color: #ffe4c4;">
-        <!-- Start Header Area  -->
-        <header class="tmp-header header-default header-not-transparent header-sticky-smooth header-sticky">
-            <div class="container position-relative">
-                <div class="row align-items-center row--0">
-                    <div class="col-xl-2 col-lg-2 col-md-6 col-4">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img class="logo-light" src="assets/images/logo/orexweb-logo.png" alt="Corporate Logo">
-                                <img class="logo-dark" src="assets/images/logo/orexweb-logo.png" alt="Corporate Logo">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
-                        <div class="header-right">
-                            <nav class="mainmenu-nav d-none d-lg-block">
-                                <ul class="mainmenu">
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#process">Process</a></li>
-                                    <li><a href="#services">Services</a></li>
-                                    <li><a href="#work">Work</a></li>                                    
-                                    <li><a href="#faqs">Faqs</a></li>
-                                </ul>
-                            </nav>
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="site-header">
+  <div class="container nav-container">
+    <a href="#home" class="logo" aria-label="OrexWeb home">
+      <img src="images/logo/orexweb-logo.png" alt="OrexWeb Logo" width="88px" height="auto">
+    </a>
 
-                            <!-- Start Header Btn  -->
-                            <div class="header-btn">
-                                <a class="tmp-btn btn-small" href="https://cal.com/orexweb/free-discovery-call">Book Discovery Call</a>
-                            </div>
-                            <!-- End Header Btn  -->
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQs</a>
+    </nav>
 
-                            <!-- Start Mobile-Menu-Bar -->
-                            <div class="mobile-menu-bar ml--5 d-block d-lg-none">
-                                <div class="hamberger">
-                                    <button class="hamberger-button">
-                                        <i class="feather-menu"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Start Mobile-Menu-Bar -->
+    <a href="https://cal.com/orexweb/free-discovery-call" class="btn btn-dark nav-cta">Book Discovery Call</a>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- End Header Area  -->
-        <div class="popup-mobile-menu">
-            <div class="inner">
-                <div class="header-top">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img class="logo-light" src="assets/images/logo/orexweb-logo.png" alt="Corporate Logo">
-                            <img class="logo-dark" src="assets/images/logo/orexweb-logo.png" alt="Corporate Logo">
-                        </a>
-                    </div>
-                    <div class="close-menu">
-                        <button class="close-button">
-                            <i class="feather-x"></i>
-                        </button>
-                    </div>
-                </div>
-                <ul class="mainmenu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#process">Process</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#work">Work</a></li>                                    
-                    <li><a href="#faqs">Faqs</a></li>
-                </ul>
-            </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile Primary">
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQs</a>
+      <a href="https://cal.com/orexweb/free-discovery-call" class="btn btn-dark">Book Discovery Call</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge" data-anim="eyebrow">Web &amp; Brand Studio</span>
+        <h1 class="hero-heading">
+          <span class="line" data-anim="line">WE DESIGN DIGITAL</span>
+          <span class="line" data-anim="line">EXPERIENCES THAT</span>
+          <span class="line accent" data-anim="line">MOVE BUSINESS</span>
+        </h1>
+        <div class="hero-cta" data-anim="cta">
+          <a href="https://surl.li/lixgzu" class="btn btn-pill">
+            <span>Get a Free Quote</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
+      </div>
 
+      <div class="hero-visual" data-anim="device">
+            <img src="images/banner/orexweb-header-banner.png" style="margin-bottom: -90px;" alt="Mizar Construction website design shown on a laptop screen" loading="eager">
+      </div>
+    </div>
+  </section>
 
-        <!-- Start Hero Area  -->
-        <div class="slider-area slider-style-6 shape-left inheader-not-transparent height-750">
-            <div class="container">
-                <div class="row row--30 align-items-center">
-                    <div class="order-1 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
-                        <div class="inner text-left">
-                            <h4 class="tmp-badge-2 tmp-title-split">WEB &amp; BRAND STUDIO</h4>
-                            <h2 class="title color-white w-700 tmp-title-split mt--20">WE DESIGN DIGITAL EXPERIENCES THAT<br>
-                                <span class="header-caption">
-                                    <span class="cd-headline loading-bar">
-                                        <span class="cd-words-wrapper">
-                                            <b class="is-visible theme-gradient" style="color: #dc4c65;">MOVE BUSINESS</b>
-                                            <b class="is-hidden theme-gradient"  style="color: #dc4c65;">MOVE BUSINESS</b>
-                                            <b class="is-hidden theme-gradient"  style="color: #dc4c65;">MOVE BUSINESS</b>
-                                        </span>
-                                    </span>
-                                </span>
-                            </h2>
-                            <p class="description color-white tmp-title-split-p"> OrexWeb is a digital agency helping ambitious businesses 
-                                build a stronger online presence through thoughtful website design, high-converting landing pages, and 
-                                distinctive brand identities. </p>
-                            <div class="button-group mt--30 mb--20 mt_sm--20 justify-content-start">
-                                <a class="tmp-btn btn-large hover-icon-reverse" href="contact-white.html">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Get a Free Quote</span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 order-2 order-lg-2">
-                        <div class="video-btn">
-                            <div class="icon-center">
-                                <div class="overlay-content">
-                                    <div class="thumbnail">
-                                        <img class="radius-small" src="assets/images/banner/banner-image.jpg" alt="Banner Image" style="margin-bottom: 124px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- ============ MARQUEE ============ -->
+  <section class="marquee-section" aria-label="Statement">
+    <div class="marquee" id="marquee">
+      <div class="marquee-track" id="marquee-track">
+        <span>Websites built to grow.</span>
+        <span>Brands designed to stand out.</span>
+        <span>Websites built to grow.</span>
+        <span>Brands designed to stand out.</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span>Websites built to grow.</span>
+        <span>Brands designed to stand out.</span>
+        <span>Websites built to grow.</span>
+        <span>Brands designed to stand out.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-image">
+        <span class="section-label" data-reveal="fade" style="padding-bottom: 25px;">About Us</span>
+        <img src="images/about/about-us.png" alt="OrexWeb team" loading="lazy" decoding="async">
+      </div>
+
+      <div class="about-copy">
+        <h2 data-reveal="fade">Digital solutions built<br>to help businesses grow.</h2>
+        <p data-reveal="fade">At OrexWeb, we combine design, technology, and strategy to help businesses build a stronger digital presence. From websites and landing pages to brand identities and marketing collateral, we create thoughtful digital experiences that look professional, communicate clearly, and support real business goals. We work closely with our clients from the first idea to final delivery, keeping the process simple, transparent, and focused on results.</p>
+        <ul class="value-list">
+          <li data-reveal="stagger">
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3>Clarity Over Complexity</h3>
+              <p>We keep things simple, focused, and easy to understand without unnecessary complexity.</p>
             </div>
-            <div class="shape-left-svg"></div>
+          </li>
+          <li data-reveal="stagger">
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3>Design With a Purpose</h3>
+              <p>Every design decision is made to support your goals and create a meaningful user experience.</p>
+            </div>
+          </li>
+          <li data-reveal="stagger">
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3>Straightforward Communication</h3>
+              <p>Clear communication, honest expectations, and a simple process from start to finish.</p>
+            </div>
+          </li>
+          <li data-reveal="stagger">
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3>Solutions Built Around Your Goals</h3>
+              <p>Every solution is tailored to your business needs, objectives, and long-term growth.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="process-header">
+        <span class="section-label light" data-reveal="fade">Working Process</span>
+        <h2 data-reveal="fade">Simple, focused and easy to follow.</h2>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline-line" id="timeline-line" aria-hidden="true"></div>
+
+        <div class="timeline-step" data-step="1">
+          <h3>Discover</h3>
+          <span class="timeline-node"></span>
+          <p>We learn about your business, goals, and what success looks like.</p>
         </div>
-        <!-- End Hero Area  -->
-
-        <!-- tmp video section start -->
-        <div class="tmp-video-section-start-one title-index-12-marque white-color-shite">
-            <div class="text-split-wrap-video scrolltext-wrapper">
-                <div class="text-split scrollingtext-1">
-                    <h2 class="title">
-                         <span style="opacity: 0.6;">Websites built to grow. Brands designed to stand out.</span>
-                         <span style="opacity: 0.6;">Websites built to grow. Brands designed to stand out.</span>
-                         <span style="opacity: 0.6;">Websites built to grow. Brands designed to stand out.</span>
-                        
-                    </h2>
-                </div>
-            </div>
+        <div class="timeline-step" data-step="2">
+          <h3>Plan</h3>
+          <span class="timeline-node"></span>
+          <p>We define the direction, structure, timeline, and key project requirements.</p>
         </div>
-        <!-- tmp video section end -->
-
-        <!-- Start About Area  -->
-        <div class="tmp-about-area tmp-section-gapBottom" id="about">
-            <div class="container">
-                <div class="row g-5 row--40 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="video-btn">
-                            <div class="video-popup icon-center about-relative-thumb">
-                                <div class="overlay-content">
-                                    <div class="thumbnail invers-anime"><img class="radius-small" src="assets/images/about/about-us.png" alt="Corporate Image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="tmp-section-title-border text-start about-style-4">
-                            <div class="pres-line-separator-wrapper mb--10">
-                                <span class="subtitle"><span class="number">01</span> 
-                                <span class="subtitle-text">About Us</span></span>
-                                <div class="line-separator"></div>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="tmp-section-title-border text-start about-style-4">
-                                <h2 class="title w-700 mb--30 tmp-title-split">Digital solutions built to help businesses grow.</h2>
-                                <p class="tmp-title-split-p">
-                                    At OrexWeb, we combine design, technology, and strategy to help businesses build a stronger 
-                                    digital presence. From websites and landing pages to brand identities and marketing collateral, 
-                                    we create thoughtful digital experiences that look professional, communicate clearly, and support real 
-                                    business goals. We work closely with our clients from the first idea to final delivery, keeping the process simple, transparent, and focused on results.
-                                </p>
-                                <ul class="feature-list">
-                                    <li>
-                                        <div class="icon">
-                                            <i class="feather-check"></i>
-                                        </div>
-                                        <div class="title-wrapper">
-                                            <h4 class="title">Clarity Over Complexity</h4>
-                                            <p class="text">We keep things simple, focused, and easy to understand without unnecessary complexity.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="feather-check"></i>
-                                        </div>
-                                        <div class="title-wrapper">
-                                            <h4 class="title">Design With a Purpose</h4>
-                                            <p class="text">Every design decision is made to support your goals and create a meaningful user experience.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="feather-check"></i>
-                                        </div>
-                                        <div class="title-wrapper">
-                                            <h4 class="title">Straightforward Communication</h4>
-                                            <p class="text">Clear communication, honest expectations, and a simple process from start to finish.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="feather-check"></i>
-                                        </div>
-                                        <div class="title-wrapper">
-                                            <h4 class="title">Solutions Built Around Your Goals</h4>
-                                            <p class="text">Every solution is tailored to your business needs, objectives, and long-term growth.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="timeline-step" data-step="3">
+          <h3>Design &amp; Build</h3>
+          <span class="timeline-node"></span>
+          <p>We turn the approved direction into a thoughtful, high-performing digital experience.</p>
         </div>
-        <!-- End About Area  -->
-        <!-- Start Process area-->
-        <div class="tmp-timeline-area tmp-section-gapBottom" id="process">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tmp-section-title-border text-center">
-                            <div class="pres-line-separator-wrapper text-center mb--10">
-                                <div class="line-separator line-left"></div>
-                                <span class="subtitle">
-                                <span class="subtitle-text">Working Process</span>
-                                </span>
-                                <div class="line-separator line-right"></div>
-                            </div>
-                            <h3 class="w-700 tmp-title-split">Simple, focused and easy to follow.</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 mt--10">
-                        <div class="timeline-style-two bg-color-blackest">
-                            <div class="row row--0">
-                                <div class="col-lg-3 col-md-3 tmp-timeline-single no-gradient">
-                                    <div class="tmp-timeline">
-                                        <h6 class="title" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">Discover</h6>
-                                        <div class="progress-line">
-                                            <div class="line-inner"></div>
-                                        </div>
-                                        <div class="progress-dot">
-                                            <div class="dot-level">
-                                                <div class="dot-inner"></div>
-                                            </div>
-                                        </div>
-                                        <p class="description" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300">
-                                            We learn about your business, goals, and what success looks like.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 tmp-timeline-single no-gradient">
-                                    <div class="tmp-timeline">
-                                        <h6 class="title" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">Plan</h6>
-                                        <div class="progress-line">
-                                            <div class="line-inner"></div>
-                                        </div>
-                                        <div class="progress-dot">
-                                            <div class="dot-level">
-                                                <div class="dot-inner"></div>
-                                            </div>
-                                        </div>
-                                        <p class="description" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300">
-                                            We define the direction, structure, timeline, and key project requirements.</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 tmp-timeline-single no-gradient">
-                                    <div class="tmp-timeline">
-                                        <h6 class="title" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">Design &amp; Build</h6>
-                                        <div class="progress-line">
-                                            <div class="line-inner"></div>
-                                        </div>
-                                        <div class="progress-dot">
-                                            <div class="dot-level">
-                                                <div class="dot-inner"></div>
-                                            </div>
-                                        </div>
-                                        <p class="description" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300">
-                                            We turn the approved direction into a thoughtful, high-performing digital experience.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 tmp-timeline-single no-gradient">
-                                    <div class="tmp-timeline">
-                                        <h6 class="title" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">Launch &amp; Support</h6>
-                                        <div class="progress-line">
-                                            <div class="line-inner"></div>
-                                        </div>
-                                        <div class="progress-dot">
-                                            <div class="dot-level">
-                                                <div class="dot-inner"></div>
-                                            </div>
-                                        </div>
-                                        <p class="description" data-sal="slide-up" data-sal-duration="700" data-sal-delay="300">
-                                            We complete final checks, launch your project, and ensure everything is ready.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="timeline-step" data-step="4">
+          <h3>Launch &amp; Support</h3>
+          <span class="timeline-node"></span>
+          <p>We complete final checks, launch your project, and ensure everything is ready.</p>
         </div>
-        <!-- End Process area  --> 
+      </div>
+    </div>
+  </section>
 
-        <!-- Start Service-8 Area  -->
-        <div class="tmp-service-area" id="services">
-            <div class="container">
-                <div class="row mb--40">
-                    <div class="col-lg-12">
-                        <div class="tmp-section-title-border text-center">
-                            <div class="pres-line-separator-wrapper text-center mb--10">
-                                <div class="line-separator line-left"></div>
-                                <span class="subtitle">
-                                    <span class="number">09</span>
-                                <span class="subtitle-text">Services</span>
-                                </span>
-                                <div class="line-separator line-right"></div>
-                            </div>
-                            <h3 class="w-700 tmp-title-split">Strategic digital solutions built around your business goals.</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Start Feature Service  -->
-        <div class="sticky-wrapper-about-fluid">
-            <!-- about area fluid start1 -->
-            <div class="tmp-about-area-fluid sticky-about-top">
-                <div class="container-fluid" style="background-color: #deb887;">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="why-choose-us-thumbnail invers-anime">
-                                <img src="assets/images/services/website-development-service.jpg" alt="Website Design and Development">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pl--40 pt_lg--40 pb_lg--40 pl_sm--0">
-                            <div class="content" style="max-width: 95%;">
-                                <div class="tmp-section-title-border text-start about-style-4 pt_md--60 pt_sm--40">
-                                    <h2 class="title w-700 mb--30 mt--30 tmp-title-split">Website Design & Development</h2>
-                                    <p>We design and develop modern, responsive websites that make your business look credible and give your customers a clear path to take action. From structure and UI design to development and launch, we handle the complete process. </p>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title"> UI/UX & Website Designx</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title"> WordPress Development </h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">E-commerce Website</h4>
-                                                    </div>
-                                               </li>                                       
-                                            </ul>
-                                         </div>
-                                         <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Responsive Development</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Business &amp; Corporate Websites</h4>
-                                                    </div>
-                                               </li>                                  
-                                            </ul>
-                                         </div>
-                                    </div>
-                                    
-                                    <div class="read-more-btn mt--30 mb--30">
-                                        <a class="tmp-btn icon-hover text-center" href="https://cal.com/orexweb/free-discovery-call">
-                                            <span class="btn-text">Book Discovery Call</span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- about area fluid end -->
-            <!-- about area fluid start2-->
-            <div class="tmp-about-area-fluid sticky-about-top">
-                <div class="container-fluid" style="background-color: #fff8dc;">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="why-choose-us-thumbnail invers-anime">
-                                <img src="assets/images/services/landing-page-design-service.png" alt="Landing Page Design">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pl--40 pt_lg--40 pb_lg--40 pl_sm--0">
-                            <div class="content" style="max-width: 95%;">
-                                <div class="tmp-section-title-border text-start about-style-4 pt_md--60 pt_sm--40">
-                                    <h2 class="title w-700 mb--30 mt--30 tmp-title-split">Landing Page Design</h2>
-                                    <p>We create focused, conversion-driven landing pages designed around one clear goal turning visitors into leads, customers, or opportunities. Every section is structured to communicate your value and guide users toward action.</p>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Landing Page Strategy</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Conversion-Focused Layouts</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Lead Generation Pages</h4>
-                                                    </div>
-                                               </li>                                       
-                                            </ul>
-                                         </div>
-                                         <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">UI/UX Design</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">SaaS &amp; Product Landing Pages</h4>
-                                                    </div>
-                                               </li>                                  
-                                            </ul>
-                                         </div>
-                                    </div>
-                                    
-                                    <div class="read-more-btn mt--30 mb--30">
-                                        <a class="tmp-btn icon-hover text-center" href="https://cal.com/orexweb/free-discovery-call">
-                                            <span class="btn-text">Book Discovery Call</span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- about area fluid end -->
-            <!-- about area fluid start3 -->
-            <div class="tmp-about-area-fluid sticky-about-top pt_md--60 pt_sm--40">
-                <div class="container-fluid" style="background-color: #f0e68c;">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="why-choose-us-thumbnail invers-anime">
-                                <img src="assets/images/services/website-maintenance-service.png" alt="Website Maintenance">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pl--40 pt_lg--40 pb_lg--40 pl_sm--0">
-                            <div class="content" style="max-width: 95%;">
-                                <div class="tmp-section-title-border text-start about-style-4 pt_md--60 pt_sm--40">
-                                    <h2 class="title w-700 mt--30 mb--30 tmp-title-split">Website Maintenance</h2>
-                                    <p>We take care of the technical side of your website to keep it secure, reliable, and up to 
-                                        date. From routine maintenance and performance improvements to troubleshooting and content 
-                                        updates, we make sure your website continues to work as it should.
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Security & Software Updates</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Performance Optimization</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Bug Fixes & Technical Support</h4>
-                                                    </div>
-                                               </li>                                       
-                                            </ul>
-                                         </div>
-                                         <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Content & Website Updates</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Website Monitoring & Maintenance</h4>
-                                                    </div>
-                                               </li>                                  
-                                            </ul>
-                                         </div>
-                                    </div>
-                                    
-                                    <div class="read-more-btn mb--30 mt--30">
-                                        <a class="tmp-btn icon-hover text-center" href="https://cal.com/orexweb/free-discovery-call">
-                                            <span class="btn-text">Book Discovery Call</span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- about area fluid end -->
-            <!-- about area fluid start4 -->
-            <div class="tmp-about-area-fluid sticky-about-top pt_md--60 pt_sm--40">
-                <div class="container-fluid">
-                    <div class="row g-0 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="why-choose-us-thumbnail invers-anime">
-                                <img src="assets/images/services/brand-identity-services.png" alt="Branding and Graphic Design">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pl--40 pt_lg--40 pb_lg--40 pl_sm--0">
-                            <div class="content" style="max-width: 95%;">
-                                <div class="tmp-section-title-border text-start about-style-4 pt_md--60 pt_sm--40">
-                                    <h2 class="title w-700 mb--30 mt--30 tmp-title-split">Branding & Graphic Design</h2>
-                                    <p> We build visual identities that make businesses recognizable, consistent, and 
-                                        professional. From logos and brand direction to marketing collateral, we create visuals 
-                                        that communicate your brand with clarity. 
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Logo Design</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Brand Guidelines</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Social Media Graphics Digital & Print Design</h4>
-                                                    </div>
-                                               </li>                                       
-                                            </ul>
-                                         </div>
-                                         <div class="col-lg-6 col-md-6">
-                                            <ul class="feature-list">
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Brand Identity</h4>
-                                                    </div>
-                                               </li>
-                                               <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title">Marketing Collateral</h4>
-                                                    </div>
-                                               </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="feather-check"></i>
-                                                    </div>
-                                                    <div class="title-wrapper">
-                                                        <h4 class="title"> Digital &amp; Print Design </h4>
-                                                    </div>
-                                               </li>                                  
-                                            </ul>
-                                         </div>
-                                    </div>
-                                    
-                                    <div class="read-more-btn mt--30 mb--30">
-                                        <a class="tmp-btn icon-hover text-center" href="https://cal.com/orexweb/free-discovery-call">
-                                            <span class="btn-text">Book Discovery Call</span>
-                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- about area fluid end --> 
-        </div>                
-                <!-- End Feature Service  -->
-            </div>
-        </div>
-        <!-- End Service-8 Area  -->
-        <!-- Start Portfolio Area  -->
-        <div class="tmp-portfolio-area tmp-section-gapTop" id="work">
-            <div class="container">
-               <div class="row mb--40">
-                    <div class="col-lg-12">
-                        <div class="tmp-section-title-border text-center">
-                            <div class="pres-line-separator-wrapper text-center mb--05">
-                                <div class="line-separator line-left"></div>
-                                <span class="subtitle">
-                                    <span class="number">10</span>
-                                <span class="subtitle-text">Work</span>
-                                </span>
-                                <div class="line-separator line-right"></div>
-                            </div>
-                            <h3 class="w-700 tmp-title-split">Projects crafted with attention to detail and high standards.</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5 mt--05">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-modern-case-studies">
-                            <a href="#" class="thumbnail invers-anime">
-                                <img src="assets/images/portfolio/orexweb-portfolio-1.png" alt="OrexWeb Portfolio">
-                            </a>
-                            <div class="inner-content-area">
-                                <a href="https://theinstastudio.com/" class="tmponhover">
-                                    <h3 class="title">TheInsta Studio</h3>
-                                    <div class="tmp-icon">
-                                        <span class="default">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path d="M5.33333 0V2.13333H12.3627L0 14.496L1.504 16L13.8667 3.63733V10.6667H16V0H5.33333Z" fill="url(#tmp-svg-gradient-57)"></path>
-                                                <defs>
-                                                <linearGradient id="tmp-svg-gradient-58" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" stop-color="#000"></stop>
-                                                    <stop offset="1" stop-color="#000"></stop>
-                                                </linearGradient>
-                                                </defs>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-modern-case-studies">
-                            <a href="#" class="thumbnail invers-anime">
-                                <img src="assets/images/portfolio/orexweb-portfolio-2.png" alt="OrexWeb Portfolio">
-                            </a>
-                            <div class="inner-content-area">
-                                <a href="https://filiate.in/" class="tmponhover">
-                                    <h3 class="title">Filiate</h3>
-                                    <div class="tmp-icon">
-                                        <span class="default">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path d="M5.33333 0V2.13333H12.3627L0 14.496L1.504 16L13.8667 3.63733V10.6667H16V0H5.33333Z" fill="url(#tmp-svg-gradient-59)"></path>
-                                                <defs>
-                                                <linearGradient id="tmp-svg-gradient-60" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" stop-color="#000"></stop>
-                                                    <stop offset="1" stop-color="#000"></stop>
-                                                </linearGradient>
-                                                </defs>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="single-modern-case-studies">
-                            <a href="#" class="thumbnail invers-anime">
-                                <img src="assets/images/portfolio/orexweb-portfolio-3.png" alt="OrexWeb Portfolio">
-                            </a>
-                            <div class="inner-content-area">
-                                <a href="https://mizar.theevntor.com/" class="tmponhover">
-                                    <h3 class="title">Mizar Construction</h3>
-                                    <div class="tmp-icon">
-                                        <span class="default">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                <path d="M5.33333 0V2.13333H12.3627L0 14.496L1.504 16L13.8667 3.63733V10.6667H16V0H5.33333Z" fill="url(#tmp-svg-gradient-61)"></path>
-                                                <defs>
-                                                <linearGradient id="tmp-svg-gradient-62" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" stop-color="#000"></stop>
-                                                    <stop offset="1" stop-color="#000"></stop>
-                                                </linearGradient>
-                                                </defs>
-                                            </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- End Portfolio Area  --> 
-
-        <!-- tmp faq area start -->
-        <div class="tmp-faq-area tmp-section-gap" id="faqs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 mb_md--30 mb_sm--30">
-                        <div class="tmp-section-title-border text-start sticky-faq-area">
-                            <div class="pres-line-separator-wrapper text-start mb--10">
-                                <span class="subtitle">
-                        <span class="number">03</span>
-                                <span class="subtitle-text">FAQ'S</span>
-                                </span>
-                                <div class="line-separator line-right"></div>
-                            </div>
-                            <h2 class="title w-700 tmp-title-split">Frequently Ask & <br> Questions</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="tmp-accordion-style accordion" data-sal="slide-up" data-sal-duration="800">
-                            <div class="accordion" id="accordionExamplea">
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                          What services does OrexWeb provide?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                            We specialize in website design & development, landing page design, and branding & 
-                                            graphic design. Depending on your requirements, we can handle everything from the 
-                                            initial design direction through development and final delivery. 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                          Do you design and develop websites from scratch?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                            Yes. We can handle the complete process from website structure and UI/UX design to 
-                                            front-end development, CMS/WordPress implementation, testing, and launch. 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Can you redesign my existing website?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                             Absolutely. We can review your existing website, identify design, usability, and 
-                                             performance issues, and create a more modern and effective experience without 
-                                             unnecessarily rebuilding everything. 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Do you create landing pages specifically for conversions?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                            Yes. Our landing pages are designed around a specific business objective, 
-                                            such as generating leads, promoting a product, booking calls, or driving sign-ups. 
-                                            We focus on clear messaging, visual hierarchy, user experience, and strong calls to 
-                                            action.
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Do you provide logo design and complete brand identity?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                            Yes. We can create logos, color palettes, typography systems, basic brand guidelines,
-                                             and supporting visual assets to give your business a consistent and professional identity.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingSeven">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                            Do you also design marketing and brand collateral?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                            Yes. Depending on your requirements, we can create digital and print collateral 
-                                            such as business cards, brochures, social media graphics, presentations, 
-                                            promotional materials, and other branded assets.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingEight">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                            How long does a website project usually take?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                         The timeline depends on the project's size and complexity. A straightforward business 
-                                         website may take a few weeks, while larger websites or projects requiring custom 
-                                         functionality can take longer. We provide a clear timeline before the project begins.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingNine">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                            What do you need from me to start a project?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                            After the project is approved, we'll provide a clear list of required materials. 
-                                            Depending on the project, this may include brand assets, content, images, website 
-                                            access, product information, references, and other relevant materials.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item card tmponhover">
-                                    <h2 class="accordion-header card-header" id="headingTen">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                            Can you work with an existing brand, design, or website?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
-                                        <div class="accordion-body card-body">
-                                                Yes. We don't always need to start from zero. We can work with your existing 
-                                                branding, Figma files, website, content, or design system and improve or extend 
-                                                what you already have.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- tmp faq area end -->
-        <!-- cta modern style -->
-        <div class="cta-main-wrapper bg-cta-modern bg_image jarallax" data-speed=".8" data-black-overlay="5">
-            <div class="container">
-                <div class="call-to-action-modern-wrapper">
-                    <h4>
-                        Tell us what you’re looking to achieve, and let’s explore how we can help.
-                    </h4>
-                    <div class="right-wrapper">
-                        <div class="icons">
-                            <img src="assets/images/call-to-action/icons/01.svg" alt="icons">
-                        </div>
-                        <p>
-                            Have a project in mind? <br> <a href="mailto:hello@orexweb.com.coms">hello@orexweb.com.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- cta modern style end --> 
-
-        <!-- Start Footer Area  -->
-        <footer class="tmp-footer footer-style-default variation-two position-relative">
-            <div class="footer-top pt--0">
-                <div class="container pb--80 pb_sm--30 pb_md--40">
-                   
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                            <div class="tmp-footer-widget">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img class="logo-light" src="assets/images/logo/orexweb-logo.png" alt="Orexweb Logo">
-                                        <img class="logo-dark" src="assets/images/logo/orexweb-logo.png" alt="Orexweb Logo">
-                                    </a>
-                                </div>
-                                <p class="subtitle mt--30">We design websites, build digital experiences, 
-                                    and create brands that help businesses stand out and grow.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="tmp-footer-widget">
-                                <h4 class="title">Quick Links</h4>
-                                <div class="inner">
-                                    <ul class="footer-link link-hover">
-                                        <li><a href="#about">About Us</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#work">Work</a></li>
-                                        <li><a href="#faqs">FAQs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                            <div class="tmp-footer-widget">
-                                <h4 class="title">Follow Us on.</h4>
-                                <div class="inner">
-                                    <ul class="social-icon social-default justify-content-start">
-                                        <li><a target="_blank" href="https://x.com/OrexWeb3210">
-                                                <i class="feather-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li><a target="_blank" href="https://www.instagram.com/orexweb/">
-                                                <i class="feather-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li><a target="_blank" href="https://www.linkedin.com/company/orexweb/">
-                                                <i class="feather-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="jumping-text">
-        <h2 class="title end">
-            Contact Us
-        </h2>
-    </div> -->
-
-            <!-- Start Copy Right Area  -->
-            <div class="copyright-area copyright-style-one">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="">
-                            <div class="copyright-right text-center">
-                                <p class="copyright-text">All Right © Orexweb <span id="year">2026</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Copy Right Area  -->
-        </footer>
-        <!-- End Footer Area  -->
-    </main>
-
-    <!-- All Scripts  -->
-
-    <!-- pre loader start -->
-
-    <!-- <div id="inverweb-load">
-    <span class="loader"></span>
-</div> -->
-
-    <!-- pre loader end -->
-
-
-
-    <div id="anywhere-home" class="">
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container services-intro">
+      <span class="section-label" data-reveal="fade">Services</span>
+      <h2 data-reveal="fade">Strategic digital solutions built around your business goals.</h2>
     </div>
 
+    <div class="services-stack" id="services-stack">
 
+      <article class="service-card" style="--card-bg:#F9FAC0;">
+        <div class="service-card-inner">
+          <div class="service-media">
+            <img src="images/services/website-development-service.jpg" alt="Developers working on website code at night" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3>Website Design &amp; Development</h3>
+            <p style="font-size: 22px;">We design and develop modern, responsive websites that make your business look credible and give your customers a clear path to take action. From structure and UI design to development and launch, we handle the complete process.</p>
+            <ul class="feature-list">
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>UI/UX &amp; Website Design</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>WordPress Development</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>E-commerce Website</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Responsive Development</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Business &amp; Corporate Websites</li>
+            </ul>
+            <a href="https://cal.com/orexweb/free-discovery-call" class="btn btn-dark sm">Book Discovery Call</a>
+          </div>
+        </div>
+      </article>
 
+      <article class="service-card" style="--card-bg:#F7EFA4;">
+        <div class="service-card-inner reverse">
+          <div class="service-media">
+            <img src="images/services/landing-page-design-service.png" alt="Landing page interface shown on a dark dashboard" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3>Landing Page Design</h3>
+            <p style="font-size: 22px;">We create focused, conversion-driven landing pages designed around one clear goal — turning visitors into leads, customers, or opportunities. Every section is structured to communicate value and guide users toward action.</p>
+            <ul class="feature-list">
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Landing Page Strategy</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Conversion-Focused Layouts</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Lead Generation Pages</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>UI/UX Design</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>SaaS &amp; Product Landing Pages</li>
+            </ul>
+            <a href="https://cal.com/orexweb/free-discovery-call" class="btn btn-dark sm">Book Discovery Call</a>
+          </div>
+        </div>
+      </article>
 
+      <article class="service-card" style="--card-bg:#FCF6C8;">
+        <div class="service-card-inner">
+          <div class="service-media">
+            <img src="images/services/website-maintenance-service.png" alt="Retro computer monitor displaying a maintenance placeholder" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3>Website Maintenance</h3>
+            <p style="font-size: 22px;">We take care of the technical side of your website to keep it secure, reliable, and up to date. From routine maintenance and performance improvements to troubleshooting and content updates, we make sure your website continues to work as it should.</p>
+            <ul class="feature-list">
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Security &amp; Software Updates</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Performance Optimization</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Bug Fixes &amp; Technical Support</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Content &amp; Website Updates</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Website Monitoring &amp; Maintenance</li>
+            </ul>
+            <a href="https://cal.com/orexweb/free-discovery-call" class="btn btn-dark sm">Book Discovery Call</a>
+          </div>
+        </div>
+      </article>
 
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
+      <article class="service-card" style="--card-bg:#ffffff;">
+        <div class="service-card-inner reverse">
+          <div class="service-media">
+            <img src="images/services/brand-identity-services.png" alt="Branding materials and swatches laid out on a desk" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3>Branding &amp; Graphic Design</h3>
+            <p style="font-size: 22px;">We build visual identities that make businesses recognizable, consistent, and professional. From logos and brand direction to marketing collateral, we create visuals that communicate your brand with clarity.</p>
+            <ul class="feature-list">
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Logo Design</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Brand Guidelines</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Social Media &amp; Print Design</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Brand Identity</li>
+              <li><span class="check sm"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Marketing Collateral</li>
+            </ul>
+            <a href="https://cal.com/orexweb/free-discovery-call" class="btn btn-dark sm">Book Discovery Call</a>
+          </div>
+        </div>
+      </article>
 
-    <div class="scrollbar-v show-on-scroll"></div>
-    <div class="float-text show-on-scroll">
-        <span><a href="#">Scroll to top</a></span>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="work-intro">
+        <span class="section-label" data-reveal="fade">Work</span>
+        <h2 data-reveal="fade">Projects crafted with attention to detail and high standards.</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card" data-reveal="stagger">
+          <div class="work-device">
+            <img src="images/portfolio/orexweb-portfolio-1.png" alt="InstaStudio wedding and events website" loading="lazy" decoding="async">
+            <a href="https://theinstastudio.com/" class="work-link" target="_blank" rel="noopener">
+              <span>The InstaStudio</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card" data-reveal="stagger">
+          <div class="work-device">
+            <img src="images/portfolio/orexweb-portfolio-2.png" alt="Filiate E-commerce website" loading="lazy" decoding="async">
+            <a href="https://filiate.in/" class="work-link" target="_blank" rel="noopener">
+              <span>Filiate</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="work-card" data-reveal="stagger">
+          <div class="work-device">
+            <img src="images/portfolio/orexweb-portfolio-3.png" alt="Mizar Construction real estate website" loading="lazy" decoding="async">
+            <a href="https://mizar.theevntor.com/" class="work-link" target="_blank" rel="noopener">
+              <span>Mizar Construction</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="container faq-grid">
+      <div class="faq-intro">
+        <span class="section-label" data-reveal="fade">FAQ'S</span>
+        <h2 data-reveal="fade">Frequently Ask &amp; Questions</h2>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="true" aria-controls="faq-panel-1" id="faq-tab-1">
+              What services does OrexWeb provide?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-tab-1">
+            <div class="accordion-panel-inner">
+              <p>We specialize in website design &amp; development, landing page design, and branding &amp; graphic design. Depending on your requirements, we can handle everything from the initial design direction through development and final delivery.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-2" id="faq-tab-2">
+              Do you design and develop websites from scratch?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-tab-2">
+            <div class="accordion-panel-inner">
+              <p>Yes. We handle everything from initial strategy and UI design through development, testing, and launch — building your site from the ground up around your goals.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-3" id="faq-tab-3">
+              Can you redesign my existing website?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-tab-3">
+            <div class="accordion-panel-inner">
+              <p>Absolutely. We review what's already working, identify gaps in design and performance, and rebuild the experience while keeping the transition smooth for your existing customers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-4" id="faq-tab-4">
+              Do you create landing pages specifically for conversions?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-tab-4">
+            <div class="accordion-panel-inner">
+              <p>Yes. Every landing page we build is structured around a single clear goal, with layout, copy, and calls to action designed to guide visitors toward that outcome.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-5" id="faq-tab-5">
+              Do you provide logo design and complete brand identity?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-5" role="region" aria-labelledby="faq-tab-5">
+            <div class="accordion-panel-inner">
+              <p>Yes. We can create logos, color palettes, typography systems, basic brand guidelines, and supporting visual assets to give your business a consistent and professional identity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-6" id="faq-tab-6">
+              Do you also design marketing and brand collateral?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-6" role="region" aria-labelledby="faq-tab-6">
+            <div class="accordion-panel-inner">
+              <p>Yes. We design supporting marketing materials such as social media graphics, brochures, business cards, and other collateral that stay consistent with your brand identity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-7" id="faq-tab-7">
+              How long does a website project usually take?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-7" role="region" aria-labelledby="faq-tab-7">
+            <div class="accordion-panel-inner">
+              <p>Timelines vary depending on scope, but most website projects take between 3 to 6 weeks from kickoff to launch, depending on complexity and how quickly feedback is provided.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-8" id="faq-tab-8">
+              What do you need from me to start a project?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-8" role="region" aria-labelledby="faq-tab-8">
+            <div class="accordion-panel-inner">
+              <p>To get started, we typically need your business goals, any existing branding or content, examples of designs you like, and access to relevant accounts once development begins.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-reveal="stagger">
+          <h3>
+            <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-panel-9" id="faq-tab-9">
+              Can you work with an existing brand, design, or website?
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-9" role="region" aria-labelledby="faq-tab-9">
+            <div class="accordion-panel-inner">
+              <p>Absolutely. We can work within your existing brand guidelines, redesign parts of your current website, or rebuild it entirely while preserving what's already working.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="contact" style="margin-bottom: 42px;">
+    <div class="cta-bg" data-reveal="clip">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80" alt="Team discussing a project around a table" loading="lazy" decoding="async">
+    </div>
+    <div class="container cta-grid">
+      <h2 data-reveal="fade" style="padding-left: 24px;">Tell us what you're looking to<br>achieve, and let's explore how we can help.</h2>
+      <div class="cta-side cta-span" data-reveal="fade">
+        <p>Have a project in mind?</p>
+        <a href="mailto:hello@orexweb.com" class="cta-email">hello@orexweb.com</a>
+        <a href="#contact" class="btn btn-pill">
+          <span>Book Discovery Call</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand" data-reveal="fade">
+      <a href="#home" class="logo">
+        <img src="images/logo/orexweb-footer-logo.png" width="100px" height="auto">
+      </a>
+      <p>We design websites, build digital experiences, and create brands that help businesses stand out and grow.</p>
     </div>
 
-    <!-- JS
-============================================ -->
-    <script src="assets/js/vendor/jquery.min.js" defer></script>
-    <script src="assets/js/vendor/bootstrap.min.js" defer></script>
-    <script src="assets/js/vendor/waypoint.min.js" defer></script>
-    <script src="assets/js/vendor/wow.min.js" defer></script>
+    <div class="footer-links" data-reveal="fade">
+      <h3>Quick Links</h3>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQs</a>
+    </div>
 
-    <script src="assets/js/vendor/feather.min.js" defer></script>
-    <script src="assets/js/vendor/sal.min.js" defer></script>
+    <div class="footer-social" data-reveal="fade">
+      <h3>Follow Us on.</h3>
+      <div class="social-icons">
+        <a href="https://x.com/OrexWeb3210" aria-label="Follow OrexWeb on X">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="0"/><path d="M18.9 3H21l-6.7 7.7L22 21h-6.4l-5-6.5L4.7 21H2.6l7.2-8.2L2 3h6.5l4.5 5.9L18.9 3z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.instagram.com/orexweb/" aria-label="Follow OrexWeb on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/orexweb/" aria-label="Follow OrexWeb on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V17M8 7.5v.01M12 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4M12 12v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
 
+  <div class="footer-bottom">
+    <p>All Right &copy; Orexweb <span id="year">2026</span></p>
+  </div>
+</footer>
 
-    <!-- gsap animation start -->
-    <script src="assets/js/plugins/gsap.js" defer></script>
-    <script src="assets/js/plugins/scrolltigger.js" defer></script>
-    <script src="assets/js/plugins/splittext.js" defer></script>
-    <!-- gsap animation end -->
-
-    <script src="assets/js/vendor/imageloaded.js" defer></script>
-    <script src="assets/js/vendor/magnify.min.js" defer></script>
-    <script src="assets/js/vendor/lightbox.js" defer></script>
-    <script src="assets/js/vendor/slick.min.js" defer></script>
-    <script src="assets/js/vendor/easypie.js" defer></script>
-    <script src="assets/js/vendor/text-type.js" defer></script>
-    <script src="assets/js/vendor/jquery-one-page-nav.js" defer></script>
-
-    <script src="assets/js/plugins/smoothscroll.js" defer></script>
-
-    <script src="assets/js/plugins/odometer.js" defer></script>
-
-    <script src="assets/js/plugins/jaralax.js" defer></script>
-    <script src="assets/js/plugins/scroll-elements.js" defer></script>
-    <!-- Main JS -->
-    <script src="assets/js/main.js" defer></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
