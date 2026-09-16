@@ -687,10 +687,15 @@ body.menu-open { overflow: hidden; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  clip-path: inset(0 0 100% 0);
   transition: clip-path 1s var(--ease-out);
 }
-.cta-bg.is-visible { clip-path: inset(0 0 0% 0); }
+/* Progressive enhancement: the clipped starting state only applies once JS
+   confirms it is running (inline script adds .js to <html>). Without this, a
+   JS failure or a browser that never fires the observer would leave the image
+   clipped to zero height and permanently invisible. Default = fully visible. */
+.js .cta-bg { clip-path: inset(0 0 100% 0); }
+.cta-bg.is-visible,
+.js .cta-bg.is-visible { clip-path: inset(0 0 0% 0); }
 .cta-bg::after {
   content: "";
   position: absolute;
