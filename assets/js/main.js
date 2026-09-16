@@ -151,23 +151,45 @@
     revealEls.forEach((el) => revealObserver.observe(el));
   }
 
-  /* Image / CTA clip reveals */
+  /* Image / CTA clip reveals
+     NOTE: these elements start at clip-path: inset(0 0 100% 0) — clipped to
+     zero visible area. Chrome factors clip-path into IntersectionObserver's
+     intersection rect, so observing the clipped element itself means the
+     ratio stays 0 and the callback never fires (Firefox ignores clip-path
+     here, which is why the CTA image showed in Firefox but not Chrome).
+     Fix: observe an UNCLIPPED ancestor, use threshold 0, plus a safety net. */
   const clipEls = document.querySelectorAll('[data-reveal="clip"]');
+
   if (prefersReducedMotion) {
     clipEls.forEach((el) => el.classList.add("is-visible"));
   } else {
-    const clipObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            clipObserver.unobserve(entry.target);
+    clipEls.forEach((el) => {
+      const watcher = el.parentElement || el;
+
+      const clipObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              el.classList.add("is-visible");
+              clipObserver.disconnect();
+            }
+          });
+        },
+        { threshold: 0, rootMargin: "0px 0px -10% 0px" }
+      );
+      clipObserver.observe(watcher);
+
+      // Safety net: if the observer somehow never fires, reveal anyway so the
+      // image can never end up permanently invisible.
+      setTimeout(() => {
+        if (!el.classList.contains("is-visible")) {
+          const rect = watcher.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add("is-visible");
           }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    clipEls.forEach((el) => clipObserver.observe(el));
+        }
+      }, 1200);
+    });
   }
 
   /* ------------------------------------------------------------------ */
